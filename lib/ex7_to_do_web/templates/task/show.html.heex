@@ -1,0 +1,23 @@
+<h1>Show Task</h1>
+
+<ul>
+
+  <li>
+    <strong>Titulo:</strong>
+    <%= @task.titulo %>
+  </li>
+
+  <li>
+    <strong>Descricao:</strong>
+    <%= @task.descricao %>
+  </li>
+
+  <li>
+    <strong>Status:</strong>
+    <%= @task.status %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.task_path(@conn, :edit, @task) %></span> |
+<span><%= link "Back", to: Routes.card_path(@conn, :index) %></span>
